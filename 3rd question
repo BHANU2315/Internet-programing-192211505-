@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Management System</title>
+</head>
+<body>
+
+    <!-- Admin Section -->
+    <section id="admin">
+        <h2>Admin Section</h2>
+        <form action="admin_login.php" method="post">
+            <!-- Add admin login form elements here -->
+            <label for="admin_username">Username:</label>
+            <input type="text" id="admin_username" name="admin_username" required>
+            <label for="admin_password">Password:</label>
+            <input type="password" id="admin_password" name="admin_password" required>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Add other admin functionalities here -->
+    </section>
+
+    <!-- User Section -->
+    <section id="user">
+        <h2>User Section</h2>
+        <form action="user_registration.php" method="post">
+            <!-- Add user registration form elements here -->
+            <label for="user_username">Username:</label>
+            <input type="text" id="user_username" name="user_username" required>
+            <!-- Add other user registration form elements here -->
+            <button type="submit">Register</button>
+        </form>
+        <!-- Add other user functionalities here -->
+    </section>
+
+    <!-- Conductor Section -->
+    <section id="conductor">
+        <h2>Conductor Section</h2>
+        <form action="conductor_login.php" method="post">
+            <!-- Add conductor login form elements here -->
+            <label for="conductor_username">Username:</label>
+            <input type="text" id="conductor_username" name="conductor_username" required>
+            <!-- Add other conductor login form elements here -->
+            <button type="submit">Login</button>
+        </form>
+        <!-- Add other conductor functionalities here -->
+    </section>
+
+</body>
+</html>
