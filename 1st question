@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodaikanal Restaurant Booking System</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS here */
+        .container {
+            margin-top: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kodaikanal Restaurant</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Register</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Home Page -->
+      <div class="container" id="home-page">
+          <div class="row">
+              <div class="col-md-6">
+                  <h1>Welcome to Kodaikanal Restaurant</h1>
+                  <p>Kodaikanal Restaurant is a cozy and elegant place to enjoy your stay in Kodaikanal. We offer a variety of suit types and costs to suit your needs and budget. You can book online and get the best deals and discounts. We also have a friendly and helpful staff to make your stay comfortable and memorable.</p>
+                  <a href="menu.html" class="btn btn-primary">View Menu</a>
+                  <a href="booking.html" class="btn btn-success">Book Online</a>
+              </div>
+              <div class="col-md-6">
+                  <img src="kodaikanal.jpg" alt="Kodaikanal" class="img-fluid">
+              </div>
+          </div>
+      </div>
+
+      <!-- Menu Page -->
+      <div class="container" id="menu-page" style="display: none;">
+          <h1>Menu</h1>
+          <p>Choose from our different suit types and costs. All suits are spacious, comfortable, and well-equipped. You can also book online and get the best deals and discounts.</p>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="single.jpg" alt="Single Room" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title">Single Room</h5>
+                          <p class="card-text">A cozy and affordable room for one person. It has a single bed, a wardrobe, a TV, and a private bathroom.</p>
+                          <p class="card-text"><strong>Cost: Rs. 1000 per night</strong></p>
+                          <a href="booking.html" class="btn btn-primary">Book Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="double.jpg" alt="Double Room" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title">Double Room</h5>
+                          <p class="card-text">A comfortable and spacious room for two people. It has a double bed, a wardrobe, a TV, and a private bathroom.</p>
+                          <p class="card-text"><strong>Cost: Rs. 2000 per night</strong></p>
+                          <a href="booking.html" class="btn btn-primary">Book Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="deluxe.jpg" alt="Deluxe Room" class="card-img-top">
+                      <div class="card-body">
+                          <h5 class="card-title">Deluxe Room</h5>
+                          <p class="card-text">A luxurious and elegant room for two or more people. It has a king-size bed, a sofa, a TV, a mini-fridge, and a private bathroom with a bathtub.</p>
+                          <p class="card-text"><strong>Cost: Rs. 4000 per night</strong></p>
+                          <a href="booking.html" class="btn btn-primary">Book Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Login Page -->
+      <div class="container" id="login-page" style="display: none;">
+          <h1>Login</h1>
+          <p>Please enter your username and password to login as admin.</p>
+          <form id="login-form">
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+      </div>
+
+      <!-- Register Page -->
+      <div class="container" id="register-page" style="display: none;">
+          <h1>Register</h1>
+          <p>Please fill in the details to register as admin.</p>
+          <form id="register-form">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input type="password" id="confirm-password" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+      </div>
+
+      <!-- Booking Page -->
+      <div class="container" id="booking-page" style="display: none;">
+          <h1>Booking</h1>
+          <p>Please fill in the details to book your suit online.</p>
+          <form id="booking-form">
+              <div class="form-group">
+                  <label for="suit-type">Suit Type</label>
+                  <select id="suit-type" class="form-control" required>
+                      <option value="">Select Suit Type</option>
+                      <option value="Single Room">Single Room</option>
+                      <option value="Double Room">Double Room</option>
+                      <option value="Deluxe Room">Deluxe Room</option>
+                  </select>
+              </div>
+              <div class="form-group">
